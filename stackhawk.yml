@@ -1,0 +1,15 @@
+app:
+  # ID of an Application in your StackHawk account
+  applicationId: c816bfe5-8a6c-4fd9-a8c9-b2f32be78776
+  # Environment name for the scan
+  env: development
+  # URL to a running instance of your application
+  host: http://54.159.142.43:8080
+
+#hawk:
+#  spider:
+#    maxDurationMinutes: 5 # maximum allowed time in minutes for any enabled spiders to crawl your web application.
+#    seedPaths: [] # list of paths to directly add to the site tree.
+#    base: true # basic spider utility that looks at html source files and follows urls it finds. Enabled by default.
+#    ajax: false # more complex spider operation that follows dynamic links and buttons on application.
+#    custom: {} # bring your own developer tools and use generated web traffic to discover your application.
