@@ -4,7 +4,7 @@ app:
   # Environment name for the scan
   env: development
   # URL to a running instance of your application
-  host: http://54.159.142.43:8080
+  host: http://44.201.111.145:8080
 
 #hawk:
 #  spider:
