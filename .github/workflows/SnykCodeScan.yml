@@ -1,5 +1,5 @@
 name: Example workflow for Maven using Snyk
-on: pull
+on: push
 jobs:
   security:
     runs-on: ubuntu-latest
@@ -12,7 +12,8 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
           args: --sarif-file-output=snyk.sarif
-          commands: code
+      - name: Run Snyk Code to check for vulnerabilities
+        run: snyk code
       - name: Upload result to GitHub Code Scanning
         uses: github/codeql-action/upload-sarif@v2
         with:
